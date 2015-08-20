@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guess The number</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<div id="page-1" class="page">
+		<h1>Guess the number!</h1>
+		<ul>
+			<li>
+				<button onclick="difficulty(10)">Easy</button>
+			</li>
+			<li>
+				<button onclick="difficulty(100)">Medium</button>
+			</li>
+			<li>
+				<button onclick="difficulty(1000)">Hard</button>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="page-2" class="page">
+		<p class="guesses">Numbers Used: <br></p>
+		<p class="tries">Tries: </p>
+		<h1>Pick a number between 1 and </h1>
+		<h2></h2>
+		<input type="text">
+		<button onClick="play()">Guess</button>
+
+	</div>
+	
+	<div id="page-3" class="page">
+		<h1>You Win!</h1>
+		<h2>It only took you </h2>
+
+		<button onclick="init()">Play Again</button>
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
