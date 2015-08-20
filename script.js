@@ -82,3 +82,8 @@ function play(){
 	document.getElementsByTagName("input")[0].value = '';
 }
 
+function playAgain(){
+	// Hide Page 3 and start again
+	document.getElementById("page-3").style.display = 'none';
+	init();
+}
